@@ -1,4 +1,4 @@
-<div *ngIf="tweets.length != 0; else noTweet">
+<div *ngIf="tweets.length > 0; else noTweet">
 <div class="col-md-12 tweet" *ngFor="let tweet of tweets">
   <a  routerLink="/search/{{tweet.user_id}}" >@{{tweet.user_id}}</a>
   <span class="pull-right">{{tweet.timestamp | date:'medium'}}</span>
@@ -7,8 +7,8 @@
   </div>
 </div>
 </div>
-<div #noTweet>
+<ng-template #noTweet>
   <h3>That's surprising! </h3>
   <h4>Your search did not return any tweet. </h4>
   <p> Please try a different search</p>
-</div>
+</ng-template>

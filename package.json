@@ -1,6 +1,6 @@
 {
-  "name": "tweet-search",
-  "version": "0.0.0",
+  "name": "twitter-search-demo",
+  "version": "1.0.0",
   "license": "MIT",
   "scripts": {
     "ng": "ng",

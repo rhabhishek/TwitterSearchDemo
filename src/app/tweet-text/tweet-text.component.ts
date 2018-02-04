@@ -48,6 +48,7 @@ export class TweetTextComponent implements OnInit {
     if (parseUrls) {
       myTweet = myTweet.replace(REGEX_URL, (url) => {
         const link = this.generateLink(url, urlClass, url);
+
         return url.replace(url, link);
       });
     }
