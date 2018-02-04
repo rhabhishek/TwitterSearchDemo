@@ -1,4 +1,4 @@
-# TwitterSearchDemo
+# Twitter Search Demo
 Application demonstrating search functionality to perform a search within a set of random tweets
 
 Tweet Corpus is available in the file Tweets.csv containing a table data Tweets(timestamp ,text ,user_id)
