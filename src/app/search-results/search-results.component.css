@@ -1,0 +1,14 @@
+.tweet{
+  background: white;
+  margin: 1em 0 1em 0;
+  padding: 0.5em;
+  box-shadow: 0.1em 0.1em #cecece;
+}
+
+.tweet a{
+  font-weight: bold;
+}
+
+.tweet div{
+  padding: 0.5em;
+}

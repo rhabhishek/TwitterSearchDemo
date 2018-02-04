@@ -1,0 +1,21 @@
+<div class="main">
+  <header class="navbar-fixed-top">
+    <a routerLink="/"><span class="col-md-3 fa fa-twitter" ></span></a>
+    <form class="col-md-6"  (ngSubmit)="onSubmit()">
+      <div class="input-group add-on">
+        <input class="form-control" placeholder="Search Twitter" [(ngModel)]="searchKey" name="searchKey"  type="text" >
+        <div class="input-group-btn">
+          <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+        </div>
+      </div>
+    </form>
+  </header>
+  <div class="row" style="margin-top: 3.5em">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+      <router-outlet></router-outlet>
+    </div>
+    <div class="col-md-1"></div>
+  </div>
+  <footer class="footer">&copy; Twitter Demo - Abhishek Rattihalli</footer>
+</div>
